@@ -1,31 +1,32 @@
-//make array to hold letters
 
+//make array to hold letters
 var availableLetters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 
 //make empty array for letters guess, and string letters together (see other game)
 var lettersGuessed = [];
 
-
 //list all variables
 var wins = 1;
 var losses = 1;
-var guessesLeft = 14;
+var guessesLeft = 9;
 
 //need to pick a random letter from the array
-
 var randomLetter = availableLetters[Math.floor(Math.random() * availableLetters.length)];
     console.log("random letter is " + randomLetter);
 
 
 //reset function
-function resetGame (){
-    if ((guessesLeft === 0) || (randomLetter === userGuess)) {
-        document.getElementById("computerPick").innerHTML = ""; 
-        document.getElementById("message").innerHTML = "";
-        document.getElementById("guessesLeft").innerHTML = "15";
-        document.getElementById("lettersGuessed").innerHTML = "";
-    }
-}
+//function resetGame (){
+    //if ((lettersGuessed.length === 15) || (randomLetter === userGuess)) {
+        //document.getElementById("computerPick").innerHTML = ""; 
+        //document.getElementById("message").innerHTML = "";
+        //document.getElementById("guessesLeft").innerHTML = "15";
+        //document.getElementById("lettersGuessed").innerHTML = "";
+        //console.log("game reset");
+    //}
+//}
+
+
 
 //need to capture user guess "document.onkeyup" and put in empty array for letters guess
 document.onkeyup = function(event) {
@@ -35,10 +36,8 @@ document.onkeyup = function(event) {
     //to determine if computer letter matches User Input
     if (randomLetter === userGuess) {
         document.getElementById("computerPick").innerHTML = randomLetter;
-        document.getElementById("message").innerHTML = "You are correct!";
         document.getElementById("wins").innerHTML = wins++;
-        document.getElementById("guessesLeft").innerHTML = guessesLeft--;
-        //resetGame();
+       
     }
     else {
         document.getElementById("lettersGuessed").innerHTML = lettersGuessed.join("  ");
@@ -46,11 +45,19 @@ document.onkeyup = function(event) {
     };
 
     if (guessesLeft === -1) {
-        document.getElementById("message").innerHTML = "You are NOT correct!";
         document.getElementById("losses").innerHTML = losses++;
     };
-      
+    
+    //trying to say if wins or losses go up by 1, to generate a new random letter and to clear letters used, reset guesses left
+    /*if ((wins++) || (losses++)) {
+        var randomLetter = availableLetters[Math.floor(Math.random() * availableLetters.length)];
+        console.log("random letter is " + randomLetter);
+        document.getElementById("guessesLeft").innerHTML = "10";
+        document.getElementById("lettersGuessed").innerHTML = "";
+    };*/
+
 };
+
 
 
 //make a reset function to fire after:
