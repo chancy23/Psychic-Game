@@ -1,18 +1,12 @@
 # Psychic-Game
 
-Instructions
-2. You're going to make a game just like the one in the video. Essentially, the app randomly picks a letter, and the user has to guess which letter the app chose. Put the following text on your page:
+This is a letter guessing game. The user must type in a letter to guess what letter the computer randomly selected.
 
-3. Guess what letter I'm thinking of
+If the user guess's the correct letter, it adds a win to the wins section, and randomly selects a new letter. THe user can continue to guess the next letter.
 
-4. Wins: (# of times the user has guessed the letter correctly)
+If the user reaches the maximum amount of guesses (10), and has not typed the correc letter that the computer picked, a loss is added to their loss section. The game continues with a newly selected random letter.
+    Note: currently the guessed letters doesn't reset immediatly on a win or loss +1, only on next key input.
 
-5. Losses: (# of times the user has failed to guess the letter correctly after exhausting all guesses)
+To reset the game/scores, user can refresh their browser.
 
-6. Guesses Left: (# of guesses left. This will update)
-
-7. Your Guesses So Far: (the specific letters that the user typed. Display these until the user either wins or loses.)
-
-8. When the player wins, increase the Wins counter and start the game over again (without refreshing the page).
-
-9. When the player loses, increase the Losses counter and restart the game without a page refresh (just like when the user wins).
+For questions or support contact Chancy Leath at chancyleath@hotmail.com.
