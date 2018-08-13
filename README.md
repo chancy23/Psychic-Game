@@ -10,3 +10,5 @@ If the user reaches the maximum amount of guesses (10), and has not typed the co
 To reset the game/scores, user can refresh their browser.
 
 For questions or support contact Chancy Leath at chancyleath@hotmail.com.
+
+*****This game as been linked in my portfolio*****
