@@ -5,19 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Psychic Game</title>
-    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body>
-    <h1>Psychic Game</h1>
 
-    <p>Guess what letter I'm thinking of... <span id= "computerPick"></span></p>
-    <p>Wins: <span id= "wins"=></span></p>
-    <p>Losses: <span id= "losses"></span></p>
-    <p>Guesses left: <span id= "guessesLeft">10</span></p>
-    <p>Letters guessed so far: <span id= "lettersGuessed"></span></p>
-    <p id="message"></p>
-    
+
+<body>
+    <div class="container col-sm-6">
+        <img src="./assets/images/crystalball1.png" alt="crystal ball">
+
+        <div class="gameOverlay">
+            <h1>Psychic Game</h1>
+            <p>Guess what letter I'm thinking of...<span id="computerPick"></span></p>
+            <p>Wins: <span id="wins"=></span></p>
+            <p>Losses: <span id="losses"></span></p>
+            <p>Guesses left: <span id="guessesLeft">10</span></p>
+            <p>Letters guessed so far: <span id="lettersGuessed"></span></p>
+        </div>
+    </div> 
 
     <script src="./assets/javascript/game.js"></script>
 </body>

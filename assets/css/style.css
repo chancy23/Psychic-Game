@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Acme');
+
+body {
+    background: rgb(134, 125, 125);
+    font-family: 'Acme', sans-serif;
+    color: darkblue;
+}
+    
+.container {
+    position: relative;
+}
+
+.gameOverlay {
+    position: absolute;
+    top: 30%;
+    left: 33%;
+    width: 100%;
+}
+
+p {
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 42px;
+}
+
